@@ -1,0 +1,263 @@
+/* 🌸 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F9F7F7;
+    color: #312d32;
+    line-height: 1.6;
+}
+
+/* 🌟 Hero Section */
+#hero {
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    text-align: center;
+    padding: 50px 20px;
+    /*border-radius: 8px;*/
+    /*margin-bottom: 20px;*/
+}
+
+#hero h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #FFDEE9;
+}
+
+/* 📌 Profile Header */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #FFDEE9;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #353232;
+}
+
+/* 📌 Container */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🎨 Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+/* 🃏 Card Style */
+.card {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.6); /* Shadow pink */
+    transform: translateY(-3px); /* Sedikit naik ke atas */
+}
+
+
+/* 🛠 Skills Card */
+.skills-card .skills-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-grid div {
+    width: 32%;
+}
+
+.skills-grid h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.skills-grid ul {
+    list-style: none;
+}
+
+.skills-grid ul li {
+    font-size: 14px;
+    background: #EAF6F6;
+    padding: 6px;
+    margin: 3px 0;
+    border-radius: 4px;
+}
+
+/* 💼 Work Experience & Education */
+.card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* 🔥 Volunteering Section */
+.volunteer-list details,
+.workexperience-list details,
+.organizations-list details {
+    background: #EAF6F6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.photo-gallery {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 48%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* 🎨 Portfolio */
+#portfolio {
+    margin-top: 30px;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.portfolio-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.portfolio-grid .card {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background: white; /* Warna putih default */
+    border-radius: 8px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Efek Hover */
+.portfolio-grid .card:hover {
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.6); /* Shadow pink */
+    transform: translateY(-3px); /* Sedikit naik ke atas */
+}
+
+/* Gambar dalam card */
+.portfolio-grid img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover Gambar */
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* 📩 Contact Me */
+#contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* 📌 Footer */
+footer {
+    text-align: center;
+    background: #FFDEE9;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .skills-card .skills-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills-grid div {
+        width: 100%;
+    }
+
+    .photo-gallery img {
+        width: 100%;
+    }
+
+    .portfolio-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-grid .card {
+        width: 90%;
+    }
+}
